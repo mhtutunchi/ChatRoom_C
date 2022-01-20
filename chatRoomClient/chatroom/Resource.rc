@@ -1,0 +1,188 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONNECTION_DIALOG DIALOGEX 0, 0, 220, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Connection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Enter server's address:",IDC_NETADDRESS1,7,6,124,8
+    PUSHBUTTON      "Connect",IDC_CONNECT_BT,80,69,56,17
+    CONTROL         "",IDC_IP,"SysIPAddress32",WS_TABSTOP,32,32,100,15
+    EDITTEXT        IDC_PORT,160,32,40,15,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "IP :",IDC_STATIC,16,34,13,8
+    LTEXT           "Port :",IDC_STATIC,137,34,19,8
+    CTEXT           "",IDC_STATUS,65,56,86,8
+END
+
+IDD_CHAT_DIALOG DIALOGEX 0, 0, 318, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat Room"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_CHAT_BOX,7,7,304,169,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Send",IDC_SEND_BT,237,184,64,13
+    EDITTEXT        IDC_MSG_BOX,16,184,209,13,ES_AUTOHSCROLL
+END
+
+IDD_LOGIN_DIALOG DIALOGEX 0, 0, 202, 125
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Sign In"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SI_USERNAME,68,24,113,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Username :",IDC_STATIC,24,26,37,8,WS_TABSTOP
+    EDITTEXT        IDC_SI_PASSWORD,68,45,113,14,ES_PASSWORD | ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Password :",IDC_STATIC,24,47,36,8,WS_TABSTOP
+    PUSHBUTTON      "Login",IDC_SI_LOGIN,67,72,69,14,WS_GROUP
+    PUSHBUTTON      "Create new account",IDC_SI_CREATE,67,93,70,14,WS_GROUP
+END
+
+IDD_SIGNUP_DIALOG DIALOGEX 0, 0, 202, 144
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Create new account"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SU_USERNAME,68,24,113,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Username :",IDC_STATIC,24,26,37,8,WS_TABSTOP
+    EDITTEXT        IDC_SU_FPASSWORD,68,45,113,14,ES_PASSWORD | ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Password :",IDC_STATIC,24,47,36,8,WS_TABSTOP
+    PUSHBUTTON      "Create",IDC_SU_CREATE,76,92,50,14,WS_GROUP
+    EDITTEXT        IDC_SU_SPASSWORD,68,68,113,14,ES_PASSWORD | ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Password :",IDC_STATIC,24,70,36,8,WS_TABSTOP
+    PUSHBUTTON      "Login",IDC_SU_LOGIN,76,114,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONNECTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_CHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_SIGNUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CONNECTION_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CHAT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LOGIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SIGNUP_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
